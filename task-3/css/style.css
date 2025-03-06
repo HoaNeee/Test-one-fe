@@ -1,0 +1,118 @@
+body {
+  margin: 20px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form .input-quantity {
+  position: relative;
+}
+
+.form .input-quantity input {
+  border: 1px solid #ddd;
+  padding: 12px 10px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.form .input-quantity .input-normal:hover {
+  border: 1px solid #000;
+}
+.form .inner-tag {
+  position: absolute;
+  background: white;
+  font-size: 14px;
+  top: -9px;
+  left: 10px;
+  color: #595959;
+  padding: 1px 5px;
+}
+.form .input-quantity:focus-within .inner-tag {
+  color: rgb(100, 100, 252);
+}
+.form .input-quantity input:focus {
+  outline: 2px solid rgb(100, 100, 252);
+}
+
+button {
+  padding: 10px 20px;
+  background: transparent;
+  font-weight: 550;
+}
+
+.btn-load {
+  border: none;
+  background: #1565c0;
+  color: #fff;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px,
+    rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.btn-load:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px,
+    rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+  background-color: rgb(21, 101, 192);
+  transition: 0.5s all;
+}
+
+.btn-clear {
+  border: 0.5px solid #9c2ab2;
+  color: #9c2ab2;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.btn-clear:hover {
+  text-decoration: none;
+  background-color: rgba(156, 39, 176, 0.04);
+  border: 1px solid rgb(156, 39, 176);
+  transition: 0.3s all;
+}
+
+.divide {
+  margin: 20px 0;
+  border: 1px solid #ddd;
+}
+
+.inner-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.inner-body .inner-card {
+  width: 280px;
+  height: 300px;
+  background: #ddd;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.inner-card .inner-img {
+  width: 100%;
+}
+
+.inner-card .inner-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* @media (max-width: 992px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 576px) {
+} */
