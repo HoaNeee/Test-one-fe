@@ -6,6 +6,7 @@ const btnLoad = document.querySelector("#btn-load");
 const btnClear = document.querySelector("#btn-clear");
 const inputQuantity = document.querySelector("#input-quantity");
 const innerBody = document.querySelector("#body");
+const loader = document.querySelector("#loader");
 
 inputQuantity.addEventListener("focus", () => {
   inputQuantity.classList.remove("input-normal");
@@ -24,6 +25,7 @@ const fetchData = async function () {
 let htmls = "";
 
 btnLoad.addEventListener("click", () => {
+  loader.classList.add("loader");
   for (let i = 0; i < inputQuantity.value; i++) {
     fetchData()
       .then((data) => {
@@ -35,6 +37,7 @@ btnLoad.addEventListener("click", () => {
                 </div>
             </div>
       `;
+          loader.classList.remove("loader");
         }
         innerBody.innerHTML = htmls;
       })
